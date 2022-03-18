@@ -1,0 +1,28 @@
+﻿@model CommonLayer.Models.Employee
+@{
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <<form method="post"asp-action="Create">
+            <div class="from-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="from-control" />
+            </div>
+            <div class="from-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="from-control" />
+            </div>
+            <div class="from-group">
+                <label asp-for="Mobile"></label>
+                <input asp-for="Mobile" class="from-control" />
+            </div>
+            <div class="from-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="from-control" />
+            </div>
+            <div class="from-group">
+                <button type="submit" class="btn btn-success">Submit </button>
+            </div>
+        </form>
+           </div>
+</div>
